@@ -2,13 +2,13 @@ let opcao = "b";
 
 switch (opcao) {
   case "a":
-    console.log("Você escolheu a opção de cadastro!");
+    console.log("Você selecionou a opcão A!");
     break;
   case "b":
-    console.log("Você escolheu a opção de login!");
+    console.log("Você selecionou a opcão B!");
     break;
   case "c":
-    console.log("Você escolheu a opção de alterar senha!");
+    console.log("Você selecionou a opção C!");
     break;
   default:
     console.log("Escolha uma opção válida!");

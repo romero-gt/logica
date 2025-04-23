@@ -9,3 +9,15 @@ function question01() {
         alert(`Valor total: R$${total},00, não passou de R$15,00`)
     }
 }
+
+function question02() {
+    let numero = Number(prompt("Digite um número: "))
+
+    if (numero % 2 === 0) {
+        alert(`${numero} é par!`)
+    } else if (numero === 0) {
+        alert('É zero')
+    } else {
+        alert(`${numero} é ímpar!`)
+    }
+}

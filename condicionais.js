@@ -10,7 +10,7 @@ function question01() {
     }
 }
 
-function question02() {
+function question02() { 
     let numero = Number(prompt("Digite um número: "))
 
     if (numero % 2 === 0) {

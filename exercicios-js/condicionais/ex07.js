@@ -2,7 +2,7 @@
 let convite = true
 let VIP = true
 
-if (convite && VIP) {
+if (convite || VIP) {
     console.log('Entrada permitida!')
 } else {
     console.log('Entrada não permitida!')

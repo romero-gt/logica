@@ -79,5 +79,36 @@ function q07() {
   const convidados = ['luis', 'alex', 'carlos']
   const vips = ['carl', 'alice']
 
-  valorPermitido(nome, convidados.concat([vips]), false) ? alert('Pode passar!') : alert('Vá embora!')
+  valorPermitido(nome, convidados.concat(vips), false) ? alert('Pode passar!') : alert('Vá embora!')
+}
+
+function q08() {
+  const base = Number.parseInt(prompt('Informe a base'))
+  const expoente = Number.parseInt(prompt('Informe o expoente'))
+  const potencia = base ** expoente
+
+  if (potencia <= 5) {
+    alert('Baixa tensão!')
+    return
+  }
+
+  alert('Alta tensão!')
+}
+
+function q09() {
+  const valorDesconto = 15
+  const valorProduto = 200
+  const valorFinal = valorProduto - (valorDesconto / valorProduto) * 100
+
+  alert(valorFinal)
+}
+
+function q10() {
+  const opcaoMenu = prompt('Escolha uma opção (A/B)\n\nA - Ativar\n\nB - Desativar').trim().toUpperCase()
+
+  if (!valorPermitido(opcaoMenu, ['A', 'B'])) return
+
+  const acao = opcaoMenu === 'A' ? 'Ativar' : 'Desativar'
+
+  alert(`Escolheu a opção: ${opcaoMenu} - ${acao}`)
 }

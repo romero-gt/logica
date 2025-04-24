@@ -20,6 +20,16 @@
             border-radius: 5px; /* Bordas arredondadas */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para os itens */
         }
+
+        .pre-code{
+            background-color: rgb(0, 0, 0);
+            color: rgb(32, 160, 37);
+
+        }
+
+        .text-sumary{
+            color: green;
+        }
         
     </style>
 </head>
@@ -60,10 +70,82 @@
                 <h3>Exercícios de Repetições</h3>
                 <ul>
                     <li>1. Calcule a tabuada do 5 usando um laço for.</li>
+                    <details>
+                        <summary class="text-sumary">Resposta</summary>
+                        <pre class="pre-code">
+                            <code class="code">
+                                let tabuada = 5
+                                for (let contador = 1; contador <= 10; contador++) {
+                                    const multiplicacao = contador*tabuada
+                                    console.log(`${tabuada}x${contador}= ${multiplicacao}`)
+                                    
+                                }   
+                            </code>
+                        </pre>
+                      </details>  
                     <li>2. Conte até 5 usando while e simule uma contagem regressiva para uma corrida.</li>
+                    <details>
+                        <summary class="text-sumary">Resposta</summary>
+                        <pre class="pre-code">
+                            <code class="code">
+                                let i=5
+                                while (i > 0) {
+                                 console.log(i)
+                                i--
+                             }  
+                            </code>
+                        </pre>
+                      </details>
                     <li>3. Peça para um cliente digitar uma senha até acertar a correta usando do...while.</li>
+                      <details>
+                        <summary class="text-sumary">Resposta</summary>
+                        <pre class="pre-code">
+                            <code>
+                                function verifyPassword(){
+                                    const senhaCorreta = "teste"
+                                    let senhaDigitada
+                                    do {
+                                        senhaDigitada=prompt("Digite a senha")
+                                        if(senhaDigitada!== senhaCorreta){
+                                            alert("senha incorreta, digite novamente")
+                                        }
+                                    } while (senhaDigitada!==senhaCorreta)
+                                        alert("senha correta")
+                                }
+                                
+                            </code>
+                        </pre>
+                      </details>
                     <li>4. Calcule a soma dos números pares entre 1 e 20 com for.</li>
+                    <details>
+                        <summary class="text-sumary">Resposta</summary>
+                        <pre class="pre-code">
+                            <code class="code">
+                                let soma=0
+                                for (let i = 1; i <= 20; i++) {
+                                    if(i%2===0){
+                                        soma+=i
+                                    }
+                                }
+                                console.log(`A soma dos pares entre 1 e 20 é: ${soma}`)
+                            </code>
+                        </pre>
+                    </details>
                     <li>5. Liste os nomes de 3 convidados usando while.</li>
+                    <details>
+                        <summary class="text-sumary">Resposta</summary>
+                        <pre class="pre-code">
+                            <code class="code">
+                            let convidados = [&quot;Arthur&quot;, &quot;Antonio&quot;, &quot;Janaina&quot;, &quot;Leticia&quot;];
+                            let quantidade = 0;
+                            
+                            while (quantidade &lt; 3) {
+                                console.log(convidados[quantidade]);
+                                quantidade++;
+                            }
+                            </code>
+                                </pre>
+                    </details>
                     <li>6. Um caixa eletrônico libera 3 tentativas de senha. Use do...while para simular isso.</li>
                     <li>7. Exiba os múltiplos de 3 entre 1 e 30 usando for.</li>
                     <li>8. Simule a bateria de um celular carregando de 0 a 100%, usando while.</li>
@@ -76,7 +158,7 @@
 
     <!-- Scripts do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="/repeticoes.js"></script>
 </body>
 
 </html>

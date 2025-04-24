@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')();
-let i = 0;
+/*let i = 0;
 while (i <= 10) {
     console.log(i);
     i++;
@@ -72,4 +72,19 @@ console.log("Lista de convidados: ")
 while (index < convidados.length){
     console.log (convidados[index]);
     index++;
-}
+}*/
+
+let numeroTentativas = 3;
+let senhaCorreta = "abc123";
+let senhaDigitada;
+
+
+    do{
+        let senhaDigitada = prompt("Digite a senha: ");
+        if (senhaDigitada !== senhaCorreta){
+            console.log (`Senha incorreta, você tem ${numeroTentativas - 1} tentativas, tente novamente!`)
+            numeroTentativas--;
+        } else {
+            console.log("Senha correta!")
+        }
+    }while (numeroTentativas > 0 && senhaDigitada !== senhaCorreta)

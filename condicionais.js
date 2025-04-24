@@ -107,7 +107,7 @@ let voltagemBase = 2;
 let expoente = 3;
 let potencia = voltagemBase ** expoente; 
 
-let potencia = (voltagemBase ** expoente);
+// let potencia = (voltagemBase ** expoente);
 
 if (potencia > 5) {
     console.log("Alta tensão");

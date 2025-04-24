@@ -1,0 +1,24 @@
+{
+    "name": "logica",
+    "version": "1.0.0",
+    "description": "> Referência de operadores mais ultilizados na estrutura da lógica de programação.",
+    "main": "condicionai.js",
+        "scripts": {
+        "rodar": "node repeticoes.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/romero-gt/logica.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/romero-gt/logica/issues"
+    },
+    "homepage": "https://github.com/romero-gt/logica#readme",
+    "dependencies": {
+      "prompt-sync": "^4.2.0"
+    }
+  }

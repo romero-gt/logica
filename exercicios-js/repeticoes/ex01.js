@@ -2,5 +2,5 @@
 let num = 5
 
 for (let i = 0; i <= 10; i++) {
-    console.log(`5 x ${i} = ${num * i}`)
+    console.log(`${5} x ${i} = ${num * i}`)
 }

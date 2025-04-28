@@ -46,5 +46,57 @@ function enviar3() {
     }
 }
 
+function enviar4(){
+    let resposta = document.getElementById("res4")
+    let resposta_pares = document.getElementById("res4_pares")
+    let resposta_impares = document.getElementById("res4_impares")
 
+
+
+    let numeros_pares = []
+    let numeros_impars = []
+
+    let total = 0
+
+    for(let i =0;i<=20;i++){
+
+        if(i%2===0){
+        
+            total += i
+        
+            numeros_pares.push(i)
+        }
+
+        else{
+            numeros_impars.push(i)
+        }
+
+
+    }
+
+    
+
+    console.log(numeros_pares);
+    console.log(numeros_impars);
+    resposta.innerHTML=`A soma total dos numeros pares:${total} `
+    resposta_pares.innerHTML=`Numeros Pares: ${numeros_pares}`
+    resposta_impares.innerHTML=`Numeros Impares: ${numeros_impars}`
+}
+
+const enviar5=()=>{
+
+    let convidados = ['Carlos','Marcio','Irineu']
+    
+    let resposta = document.getElementById("res5")
+
+    while(resposta.value =='Irineu'){
+        for(let i = 0 ;i <=3;i++){
+            resposta.innerHTML+=convidados[i]+"<br>"
+            console.log(resposta)
+        }
+    }
+
+
+    
+}
 

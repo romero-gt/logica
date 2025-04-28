@@ -17,8 +17,27 @@
             margin-bottom: 10px; /* Espaçamento entre os itens da lista */
             padding: 10px; /* Preenchimento interno dos itens */
             background-color: #f8f9fa; /* Cor de fundo dos itens */
-            border-radius: 5px; /* Bordas arredondadas */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para os itens */
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        button{
+            all:unset;
+            cursor:pointer;
+            padding:9px 10px 9px 10px;
+            border-radius:5px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:0.5vh;
+
+            background-color:#2600ff;
+            color:white;
+        }
+
+        button:hover{
+            background-color:#003cff;
+            color:white;
         }
         
     </style>
@@ -60,14 +79,64 @@
                 <h3>Exercícios de Repetições</h3>
                 <ul>
                     <li>1. Calcule a tabuada do 5 usando um laço for.</li>
+                    <br>
+                    <div id="res1">Resposta</div>
+                    <br>
+                    <button id="enviar1" onclick="enviar1()">Enviar</button>
+                    <br>
+                    
+
+
                     <li>2. Conte até 5 usando while e simule uma contagem regressiva para uma corrida.</li>
+                    <br>
+                    <div id="res2">Resposta</div>
+                    <br>
+                    <button id="enviar2" onclick="enviar2()">Enviar</button>
+                    <br>
+
+
                     <li>3. Peça para um cliente digitar uma senha até acertar a correta usando do...while.</li>
+                    <br>
+                    <label for="">Idade:</label>
+                    <br>
+                    <input type="number" id="input3">
+                    <br>
+                    <label for="">Carteira:</label>
+                    <br>
+                    
+                    
+                    <input type="radio" id="carteiraSim" name="carteira" value="sim">
+                    <label for="carteiraSim">Sim</label>
+                    
+                    <input type="radio" id="carteiraNao" name="carteira" value="nao">
+                    <label for="carteiraNao">Não</label>
+                    
+                    <br><br>
+                    <div id="res3">Resposta</div>
+                    <br>
+                    <button id="enviar3" onclick="enviar3()">Enviar</button>
+                    
+
+
                     <li>4. Calcule a soma dos números pares entre 1 e 20 com for.</li>
+                    
+
+
                     <li>5. Liste os nomes de 3 convidados usando while.</li>
+
+
                     <li>6. Um caixa eletrônico libera 3 tentativas de senha. Use do...while para simular isso.</li>
+
+
                     <li>7. Exiba os múltiplos de 3 entre 1 e 30 usando for.</li>
+
+
                     <li>8. Simule a bateria de um celular carregando de 0 a 100%, usando while.</li>
+
+
                     <li>9. Conte quantos números ímpares há entre 10 e 30.</li>
+
+
                     <li>10. Simule uma roleta que gira até cair no número 7, usando do...while.</li>
                 </ul>
             </div>
@@ -76,6 +145,7 @@
 
     <!-- Scripts do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
